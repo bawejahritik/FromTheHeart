@@ -33,6 +33,9 @@ import autoserv from "./Frontend_HomePage.gif"
 import tennis from "./tennis.jpg"
 import nike from "./nike.jpg"
 import website from "./website.png"
+import contactLogo from "./contact_logo.svg"
+import linkedin from "./linkedin.png"
+import email from "./email.png"
 
 export {
   logo,
@@ -66,5 +69,8 @@ export {
   autoserv,
   tennis,
   nike,
-  website
+  website,
+  contactLogo,
+  linkedin,
+  email
 };

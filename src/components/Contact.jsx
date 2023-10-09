@@ -4,8 +4,8 @@ import emailjs from '@emailjs/browser';
 import {styles} from '../style';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-
-
+import { contactLogo } from '../assets';
+import {email, github, linkedin} from '../assets';
 
 const Contact = () => { 
 
@@ -88,6 +88,25 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
+      </motion.div>
+      <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl flex justify-evenly items-center flex-col'>
+        <motion.div variants={slideIn('right', 'tween', 0.2, 1)}>
+          <img src={contactLogo} width={300} height={300}/>
+        </motion.div>
+        <motion.div variants={slideIn('right', 'tween', 0.2, 1)}>
+          <p className='text-white font-medium mb-4 py-4 px-6'>Let's Connect! Reach Out and Say Hello</p>
+          <div className='flex justify-evenly items-start flex-row'>
+            <div onClick={() => window.location = 'mailto:bawejahritik@gmail.com'} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={email} alt='email' className='object-contain'/>
+            </div>
+            <div onClick={() => window.open("https://www.linkedin.com/in/hritik-baweja/", "_blank")} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={linkedin} alt='linkedin' className='object-contain'/>
+            </div>
+            <div onClick={() => window.open("https://github.com/bawejahritik", "_blank")} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={github} alt='github' className='w-1/2 h-1/2 object-contain'/>
+            </div>
+          </div>
+      </motion.div>
       </motion.div>
     </div>
   )
