@@ -48,10 +48,7 @@ import {
       id: "contact",
       title: "Contact",
     },
-    {
-      id: "https://bawejahritik.github.io/hritikblog.github.io/",
-      title: "Blog"
-    }
+  
   ];
   
   const services = [

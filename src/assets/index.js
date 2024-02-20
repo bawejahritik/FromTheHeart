@@ -36,6 +36,7 @@ import website from "./website.png"
 import contactLogo from "./contact_logo.svg"
 import linkedin from "./linkedin.png"
 import email from "./email.png"
+import avatar from "./avatar.png"
 
 export {
   logo,
@@ -72,5 +73,6 @@ export {
   website,
   contactLogo,
   linkedin,
-  email
+  email,
+  avatar
 };
